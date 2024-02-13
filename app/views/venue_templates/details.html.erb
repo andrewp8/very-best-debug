@@ -23,7 +23,7 @@
 
   <dt>Edit venue</dt>
   <dd>
-    <form action="/update_venue/<%= @the_venue.id %>">
+    <form action="/update_venue/<%= @the_venue.id %>", method="post">
       <label for="browser_venue">Address</label>
       <input id="browser_venue" type="text" name="query_address" value="<%= @the_venue.address %>" placeholder="Enter an address...">
       
@@ -39,7 +39,7 @@
 
   <dt>Delete venue</dt>
   <dd>
-    <a href="/delete_venue/<% @the_venue.id %>">
+    <a href="/delete_venue/<%=@the_venue.id %>">
       Delete this venue
     </a>
   </dd>
